@@ -15,6 +15,26 @@ int hargaWeekend[JUMLAH_FILM]  = {45000, 50000, 55000, 60000, 47000, 65000};
 
 char *namaBioskop[JUMLAH_BIOSKOP] = {"Cinema Pusat", "Cinema Timur", "Cinema Barat"};
 
+/* Data letak bioskop bertingkat: Provinsi -> Kota -> Nama Bioskop */
+typedef struct {
+    const char *provinsi;
+    const char *kota;
+    const char *namaBioskop;
+} LokasiBioskop;
+
+LokasiBioskop daftarLokasiBioskop[] = {
+    {"Riau", "Pekanbaru", "Cinema XXI SKA"},
+    {"Riau", "Pekanbaru", "CGV Transmart"},
+    {"Riau", "Dumai", "Cinema XXI Citimall"},
+    {"Sumatera Barat", "Padang", "Cinema XXI Plaza Andalas"},
+    {"Sumatera Barat", "Bukittinggi", "CGV Raya Bukittinggi"},
+    {"DKI Jakarta", "Jakarta Selatan", "Cinema XXI Pondok Indah"},
+    {"DKI Jakarta", "Jakarta Pusat", "CGV Grand Indonesia"},
+    {"Jawa Barat", "Bandung", "Cinema XXI Ciwalk"}
+};
+
+int jumlahLokasiBioskop = sizeof(daftarLokasiBioskop) / sizeof(daftarLokasiBioskop[0]);
+
 /* akhirPekan: 0 = weekdays, 1 = weekend (Sabtu dan Minggu) */
 char *namaTanggal[JUMLAH_TANGGAL] = {"Senin", "Selasa", "Rabu", "Kamis",
                                      "Jumat", "Sabtu", "Minggu"};
