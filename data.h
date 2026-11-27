@@ -50,6 +50,16 @@ extern int hargaPopcorn[JUMLAH_RASA][JUMLAH_UKURAN];
 extern int hargaMinuman[JUMLAH_MINUMAN][JUMLAH_UKURAN];
 extern char *namaMetode[JUMLAH_METODE];
 
+/* Data letak bioskop bertingkat: Provinsi -> Kota -> Nama Bioskop */
+typedef struct {
+    const char *provinsi;
+    const char *kota;
+    const char *namaBioskop;
+} LokasiBioskop;
+
+extern LokasiBioskop daftarLokasiBioskop[];
+extern int jumlahLokasiBioskop;
+
 /* Membaca pilihan 1 sampai n (diulang jika tidak valid).
    Mengembalikan indeks (mulai 0) */
 int bacaPilihan(int n);
