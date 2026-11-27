@@ -3,7 +3,7 @@
 **NAMA KELOMPOK**
 1. Wanda Desfa Hamidah (26071105052)
 2. Dzafif Al-Ikhsan (26071103579
-3. Shadadz
+3. Mabkhud Shadadz Ibra (26071104235)
 4. Askia Yuna Ananda (26071101350)
 
 ## Latar Belakang & Tujuan Aplikasi
